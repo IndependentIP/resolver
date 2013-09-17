@@ -1,3 +1,6 @@
+<% unless @domain.empty? -%>
+domain <%= @domain %>
+<% end -%>
 search <%= @search %>
 <% @nameservers.each do |nameserver| -%>
 nameserver <%= nameserver %>
