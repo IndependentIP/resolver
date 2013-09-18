@@ -17,8 +17,8 @@
 #
 
 
-default['resolver']['search'] = node['domain']
-default['resolver']['domain'] = node['domain']
+default['resolver']['search'] = node['domain'] || ''
+default['resolver']['domain'] = node['domain'] || ''
 default['resolver']['nameservers'] = []
 default['resolver']['options'] = {}
 default['resolver']['server_role'] = 'nameserver'
